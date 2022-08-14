@@ -1,5 +1,5 @@
 1. Project setup.✔ (Revisar favicon y mozCurrentTransform)
-2. Player creation.
+2. Player creation.✔
 3. Gravity.
 4. Player movement.
 5. Platforms.
