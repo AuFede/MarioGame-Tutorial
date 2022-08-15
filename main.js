@@ -32,13 +32,16 @@ class Player {
     update() {
         this.draw()
         this.position.y += this.velocity.y
-
+        
+        if (this.position.y + this.height + this.velocity.y
+            <= canvas.height)
         this.velocity.y += gravity
+        else this.velocity.y = 0
     }
 }
 
 const player = new Player()
-player.update()
+
 
 function animate () {
     requestAnimationFrame(animate)

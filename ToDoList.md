@@ -1,6 +1,6 @@
 1. Project setup.✔ (Revisar favicon y mozCurrentTransform)
 2. Player creation.✔
-3. Gravity.
+3. Gravity.✔
 4. Player movement.
 5. Platforms.
 6. "Scroll" the background.
