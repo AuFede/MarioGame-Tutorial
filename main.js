@@ -3,8 +3,8 @@ const canvas = document.querySelector('canvas')
 // Este va a ser nuestro context.
 const c = canvas.getContext('2d')
 
-canvas.width =innerWidth
-canvas.height =innerHeight
+canvas.width = innerWidth
+canvas.height = innerHeight
 
 const gravity = 1.5
 
@@ -51,6 +51,23 @@ function animate () {
 
 animate()
 
+// player.velocity.y funciona porque sustraemos 20 de la velocity.y que está en el constructor,
+// y a su vez en update unimos la velocity a la position y agregamos gravity en 0 para que siempre caiga.
+
 addEventListener('keydown', ({keyCode}) => {
-    console.log(keyCode)
+    switch (keyCode) {
+        case 65:
+            console.log('left')
+            break
+        case 83:
+            console.log('down')
+            break
+        case 68:
+            console.log('right')
+            break
+        case 87:
+            console.log('up')
+            player.velocity.y -= 20
+            break
+    }
 })
