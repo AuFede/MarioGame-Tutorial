@@ -56,6 +56,12 @@ function animate () {
     requestAnimationFrame(animate)
     c.clearRect(0, 0, canvas.width, canvas.height)
     player.update ()
+
+    if (keys.right.pressed) {
+        player.velocity.x = 5
+    } else if(keys.left.pressed) {
+        player.velocity.x = -5       
+    } else player.velocity.x = 0
 }
 
 animate()
@@ -81,8 +87,6 @@ addEventListener('keydown', ({keyCode}) => {
             player.velocity.y -= 20
             break
     }
-
-    console.log(keys.right.pressed)
 })
 
 addEventListener('keyup', ({keyCode}) => {

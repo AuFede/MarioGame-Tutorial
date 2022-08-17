@@ -1,7 +1,7 @@
 1. Project setup.✔ (Revisar favicon y mozCurrentTransform)
 2. Player creation.✔
 3. Gravity.✔
-4. Player movement.
+4. Player movement.✔
 5. Platforms.
 6. "Scroll" the background.
 7. Win scenario.
@@ -13,4 +13,4 @@
 
 https://www.youtube.com/watch?v=4q2vvZn5aoo
 
-32:10
+35:43
