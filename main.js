@@ -60,7 +60,8 @@ class Platform {
 }
 
 const player = new Player()
-const platform = new Platform()
+// const platform = new Platform()
+const platforms = [new Platform()]
 
 const keys = {
     right: {
@@ -82,7 +83,15 @@ function animate () {
         player.velocity.x = 5
     } else if(keys.left.pressed && player.position.x > 100) {
         player.velocity.x = -5       
-    } else player.velocity.x = 0
+    } else {
+        player.velocity.x = 0
+
+        if (keys.right.pressed) {
+            platform.position.x -= 5
+        } else if (keys.left.pressed) {
+            platform.position.x += 5
+        }
+    }
 
 
 // Platform collision detection.
