@@ -4,7 +4,7 @@
 4. Player movement.✔
 5. Platforms.✔
 6. "Scroll" the background.✔
-7. Win scenario.
+7. Win scenario.✔
 8. Image platforms.
 9. Parallax scroll.
 10. Death pits.
