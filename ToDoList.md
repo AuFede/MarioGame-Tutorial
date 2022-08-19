@@ -2,7 +2,7 @@
 2. Player creation.✔
 3. Gravity.✔
 4. Player movement.✔
-5. Platforms.
+5. Platforms.✔
 6. "Scroll" the background.
 7. Win scenario.
 8. Image platforms.
@@ -13,4 +13,4 @@
 
 https://www.youtube.com/watch?v=4q2vvZn5aoo
 
-35:43
+41:29
