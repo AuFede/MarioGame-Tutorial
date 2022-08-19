@@ -60,7 +60,6 @@ class Platform {
 }
 
 const player = new Player()
-// const platform = new Platform()
 const platforms = [new Platform()]
 
 const keys = {
@@ -77,7 +76,9 @@ function animate () {
     requestAnimationFrame(animate)
     c.clearRect(0, 0, canvas.width, canvas.height)
     player.update ()
-    platform.draw()
+    platforms.forEach((platform)=> {
+        platform.draw()
+    })
 
     if (keys.right.pressed && player.position.x < 400) {
         player.velocity.x = 5
@@ -87,15 +88,21 @@ function animate () {
         player.velocity.x = 0
 
         if (keys.right.pressed) {
+            platforms.forEach((platform) => {
             platform.position.x -= 5
+
+        })
         } else if (keys.left.pressed) {
+            platforms.forEach((platform) => {
             platform.position.x += 5
+
+            })
         }
     }
 
 
 // Platform collision detection.
-
+    platforms.forEach((platform) => {
     if (player.position.y + player.height <= 
         platform.position.y && player.position.y +
         player.height + player.velocity.y >= 
@@ -105,6 +112,7 @@ function animate () {
         platform.width) {
         player.velocity.y = 0
         }
+    })
 }
 
 animate()
