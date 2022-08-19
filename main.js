@@ -1,3 +1,4 @@
+import platform from './img/platform.png'
 const canvas = document.querySelector('canvas')
 
 // Este va a ser nuestro context.
